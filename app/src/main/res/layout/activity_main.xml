@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#040404"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar" />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/g1"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:src="@drawable/aus"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="398dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:background="#020202"
+            android:fontFamily="@font/arbutus"
+            android:gravity="fill_vertical"
+            android:text="ABOUT US"
+            android:textColor="#FAF8F8"
+            android:textSize="22sp"
+            app:drawableTint="#F44336" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="393dp"
+            android:layout_height="282dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="fill_vertical"
+            android:justificationMode="inter_word"
+            android:text="A mobile application (also called a mobile app) is a type of application designed to run on a mobile device, which can be a smartphone or tablet computer. Even if apps are usually small software units with limited function, they still manage to provide users with quality services and experiences."
+            android:textColor="#FBFBFB"
+            android:textSize="21.5dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+        <include layout="@layout/main_nav_drawer"/>
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
